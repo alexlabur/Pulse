@@ -55,6 +55,11 @@ const slider = tns({
       });
     });
 
+    // toggleSlide('.catalog-item__link');
+    // toggleSlide('.catalog-item__back');
+
+
+
     //modal
 
     $('[data-modal=consultation]').on('click', function() {
@@ -72,5 +77,62 @@ const slider = tns({
             $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
             $('.overlay, #order').fadeIn('slow');
         });
-    })
+    });
 
+    $('#consultation-form').validate();
+    $('#consultation form').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2
+			},
+			phone: "required",
+			email: {
+				required: true,
+				email: true
+			}
+		},
+		messages: {
+			name: {
+				required: "Пожалуйста, введите свое имя",
+				minlength: jQuery.validator.format("Введите {0} символов")
+			  },
+			phone: "Пожалуйста, введите свой телефон",
+			email: {
+			  required: "Пожалуйста, введите свою почту",
+			  email: "неправильно введен адрес почты"
+			}
+		  }
+	});
+	$('#order form').validate();
+	
+	function valideForms(form) {
+		$(form).validate({
+			rules: {
+				name: {
+					required: true,
+					minlength: 2
+				},
+				phone: "required",
+				email: {
+					required: true,
+					email: true
+				}
+			},
+			messages: {
+				name: {
+					required: "Пожалуйста, введите свое имя",
+					minlength: jQuery.validator.format("Введите {0} символов")
+				  },
+				phone: "Пожалуйста, введите свой телефон",
+				email: {
+				  required: "Пожалуйста, введите свою почту",
+				  email: "неправильно введен адрес почты"
+				}
+			  }
+		});
+	}
+
+	valideForms('#consultation-form');
+	valideForms('#consultation form');
+	valideForms('#order form');
