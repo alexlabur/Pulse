@@ -106,7 +106,7 @@ const slider = tns({
 	});
 	$('#order form').validate();
 	
-	function valideForms(form) {
+	function validateForms(form) {
 		$(form).validate({
 			rules: {
 				name: {
@@ -133,6 +133,6 @@ const slider = tns({
 		});
 	}
 
-	valideForms('#consultation-form');
-	valideForms('#consultation form');
-	valideForms('#order form');
+	validateForms('#consultation-form');
+	validateForms('#consultation form');
+	validateForms('#order form');
