@@ -79,34 +79,9 @@ const slider = tns({
         });
     });
 
-    $('#consultation-form').validate();
-    $('#consultation form').validate({
-		rules: {
-			name: {
-				required: true,
-				minlength: 2
-			},
-			phone: "required",
-			email: {
-				required: true,
-				email: true
-			}
-		},
-		messages: {
-			name: {
-				required: "Пожалуйста, введите свое имя",
-				minlength: jQuery.validator.format("Введите {0} символов")
-			  },
-			phone: "Пожалуйста, введите свой телефон",
-			email: {
-			  required: "Пожалуйста, введите свою почту",
-			  email: "неправильно введен адрес почты"
-			}
-		  }
-	});
-	$('#order form').validate();
+    
 	
-	function validateForms(form) {
+	function valideForms(form) {
 		$(form).validate({
 			rules: {
 				name: {
@@ -133,6 +108,8 @@ const slider = tns({
 		});
 	}
 
-	validateForms('#consultation-form');
-	validateForms('#consultation form');
-	validateForms('#order form');
+	valideForms('#consultation-form');
+	valideForms('#consultation form');
+	valideForms('#order form');
+
+	$('input[name=phone]').mask("+7 (999) 999-9999");
