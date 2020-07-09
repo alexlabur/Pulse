@@ -7,7 +7,8 @@
     <title>Pulse</title>
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/font.css">
-    <!-- <link rel="stylesheet" href="css/slick.css"> -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -75,7 +76,7 @@
                 </div>
 
                 <div class="advantages__item">
-                    <img src="icons/advantages/heart.png" alt="cup">
+                    <img src="icons/advantages/heart.png" alt="heart" class="advantages__icon advantages__icon_animated">
                     <div class="advantages__subtitle">
                         Заботимся о здоровье
                     </div>
@@ -85,7 +86,7 @@
                 </div>
 
                 <div class="advantages__item">
-                    <img src="icons/advantages/shoe.png" alt="cup">
+                    <img src="icons/advantages/shoe.png" alt="shoe">
                     <div class="advantages__subtitle">
                         Учим бегать
                     </div>
@@ -419,7 +420,7 @@
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
 
-            <div class="review__item">
+            <div class="review__item fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
                 <img src="img/rev_1.png" alt="#" class="review__img">
                 <div class="review__text">
                     <div class="review__name">Ирина Иванченко</div>
@@ -433,7 +434,7 @@
             </div>
         
             
-            <div class="review__item">
+            <div class="review__item fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
                 <img src="img/rev_2.png" alt="#" class="review__img">
                 <div class="review__text">
                     <div class="review__name">Иван Сёмочкин</div>
@@ -449,7 +450,7 @@
 
         
             
-            <div class="review__item">
+            <div class="review__item fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
                 <img src="img/rev_3.png" alt="#" class="review__img">
                 <div class="review__text">
                     <div class="review__name">Юлия Дашкина</div>
@@ -528,6 +529,7 @@
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="js/script.js"></script>
 </body>
