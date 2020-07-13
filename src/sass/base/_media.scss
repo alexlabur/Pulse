@@ -1,0 +1,17 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 900px;
+    }
+    .promo
+        &__header {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        &__subheader {
+            font-size: 20px;
+            line-height: 20px;
+        }
+        &__wrapper {
+            min-height: 600px;
+        }
+    }
