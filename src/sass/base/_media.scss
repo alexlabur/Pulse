@@ -105,6 +105,7 @@
             flex-direction: column;
             &__item {
                 flex-direction: column;
+                width: 100%;
             }
         }
 
@@ -155,6 +156,14 @@
     @media (max-width: 575px) {
         .container {
             max-width: 500px;     
+        }
+        .advantages {
+            width: 100%;
+            flex-direction: column;
+            &__item {
+                flex-direction: column;
+                width: 100%;
+            }
         }
     }
 
