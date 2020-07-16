@@ -58,8 +58,21 @@
             &__descr {
                 font-size: 10px;
             }
+            .title {
+                font-size: 20px;
+            }
         }
 
+        .consultation {
+            .title {
+                font-size: 20px;
+                text-align: center;
+            }
+            &__descr {
+                font-size: 15px;
+                text-align: center;
+            }
+        }
 
         .carousel {
             .tns-item {
@@ -111,6 +124,7 @@
             &__img {
                 width: 100px;
                 height: 100px;
+
             }
         }
 
@@ -135,6 +149,12 @@
                     height: 15px;
                 }
             }
+        }
+    }
+
+    @media (max-width: 575px) {
+        .container {
+            max-width: 500px;     
         }
     }
 
