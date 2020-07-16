@@ -1,7 +1,7 @@
 
 @media (max-width: 1200px) {
     .container {
-        max-width: 600px;
+        max-width: 650px;
         width: 100%;
         
     }
@@ -28,8 +28,15 @@
             // align-items: center;
         };
     }
+    .button {
+        &_main {
+            width: 210px;
+        }
+    }
     
 };
+
+
 
     @media (max-width: 992px) {
         .advantages {
@@ -37,7 +44,15 @@
             &__item {
                 width: 100%;
             }
+            &__subtitle {
+                font-size: 15px;
+            }
+            &__descr {
+                font-size: 10px;
+            }
         }
+
+
         .carousel {
             .tns-item {
                 img {
@@ -45,13 +60,71 @@
                 }
             }
         }
+        
     }
 
-    @media (max-width: 575px) {
+        .pageup img {
+            width: 60%;
+        }
+
+        .button {
+            &_submit {
+                width: 210px;
+            }
+        }
+
+
+    @media (max-width: 767px) {
         .advantages {
             width: 100%;
+            flex-direction: column;
             &__item {
-                width: 100%;
+                flex-direction: column;
+            }
+        }
+
+        .container {
+            // width: 100%;
+            flex-direction: column;
+            
+        }
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        .review {
+            &__item {
+                flex-direction: column;
+            }
+            &__img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        .footer {
+            &__info {
+                width: 300px;
+                height: 110px;
+                padding: 10px 60px 60px 60px;
+            }
+            &__addr {
+                font-size: 10px;
+                margin-bottom: 2px;
+            }
+            &__phone {
+                font-size: 12px;
+                margin-bottom: 5px;
+            }
+            &__social-item {
+                width: 25px;
+                height: 25px;
+                img {
+                    height: 15px;
+                }
             }
         }
     }
+
+
+    
