@@ -59,7 +59,7 @@
             .title {
                 font-size: 20px;
             }
-        }
+        };
 
         .consultation {
             .title {
@@ -71,7 +71,6 @@
                 text-align: center;
             }
         }
-
         .carousel {
             .tns-item {
                 img {
@@ -81,7 +80,6 @@
         }
         
     }
-
         .pageup img {
             width: 60%;
         }
@@ -182,7 +180,8 @@
 
     @media (max-width: 575px) {
         .container {
-            max-width: 300px;     
+            max-width: 300px;
+            width: 100%;     
         }
         .advantages {
             &__wrapper {
