@@ -74,7 +74,7 @@
         .carousel {
             .tns-item {
                 img {
-                    height: 220px;
+                    height: 200px;
                 }
             }
         }
@@ -93,11 +93,14 @@
 
     @media (max-width: 767px) {
         .container {
-            max-width: 550px;
-            width: 100%;
+            max-width: 700px;
+            // width: 100%;
         }
 
         .carousel {
+            .container {
+                width: 400px;
+            }
             .prev, .next {
                 img {
                     width: 15px;
@@ -107,6 +110,9 @@
         }
 
         .consultation {
+            &__inner {
+                width: 400px;
+            }
             padding-top: 50px;
             min-height: 300px;
             .feed-form {
@@ -117,6 +123,7 @@
         .catalog {
             &__tab {
                 font-size: 10px;
+                width: 150px;
             }
         }
 
@@ -150,7 +157,9 @@
             &__img {
                 width: 100px;
                 height: 100px;
-
+            }
+            &__text {
+                margin-left: 0px;
             }
         }
 
@@ -180,8 +189,33 @@
 
     @media (max-width: 575px) {
         .container {
-            max-width: 300px;
+            max-width: 370px;
             width: 100%;     
+        }
+        .promo {
+            &__icons {
+                width: 300px;
+            }
+            &__subheader {
+                text-align: center;
+            }
+            &__wrapper {
+                align-items: center;
+            }
+        }
+
+        .header {
+            .button {
+                width: 124px;
+            }
+            &__phone {
+                font-size: 11px;
+            }
+            &__official {
+                span {
+                    font-size: 11px;
+                }
+            }
         }
         .advantages {
             &__wrapper {
@@ -197,4 +231,38 @@
                 margin-top: 10px;
             }
         }
+
+        .carousel {
+            .container {
+                width: 300px;
+            }
+            &__inner {
+                // position: relative;
+                width: 400px;
+                // margin: 0 auto;
+                // img {
+                //     width: 33%;
+                // }
+            }
+            .prev, .next {
+                display: none;
+            }
+        }
+        .review {
+            &__text {
+                font-size: 10px;
+                margin-top: 20px;
+            }
+        }
+        .consultation {
+            .feed-form {
+                width: 200px;
+            }
+            
+           
+            .container {
+                width: 100%;
+            }
+        }
+
     }
