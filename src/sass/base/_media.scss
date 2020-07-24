@@ -113,17 +113,20 @@
             &__inner {
                 width: 400px;
             }
-            padding-top: 50px;
-            min-height: 300px;
+                padding-top: 50px;
+                min-height: 300px;
+
             .feed-form {
-                width: 210px;
+                width: 575px;
+                align-items: center;
+                justify-content: center;
             }
         }
 
         .catalog {
             &__tab {
                 font-size: 10px;
-                width: 150px;
+                width: 100px;
             }
         }
 
@@ -189,12 +192,15 @@
 
     @media (max-width: 575px) {
         .container {
-            max-width: 370px;
+            max-width: 410px;
             width: 100%;     
         }
         .promo {
             &__icons {
                 width: 300px;
+            }
+            &__icon {
+                font-size: 10px;
             }
             &__subheader {
                 text-align: center;
@@ -205,15 +211,19 @@
         }
 
         .header {
+            line-height: 15px;
             .button {
-                width: 124px;
+                width: 100px;
+                font-size: 10px;
             }
             &__phone {
                 font-size: 11px;
             }
             &__official {
+                font-size: 14px;
                 span {
-                    font-size: 11px;
+                    font-size: 12px;
+                    display: inline;
                 }
             }
         }
@@ -256,8 +266,15 @@
         }
         .consultation {
             .feed-form {
-                width: 200px;
+                width: 370px;
+                // justify-content: center;
+                align-items: center;
+            
+            input {
+                height: 30px;
             }
+            };
+            
             
            
             .container {
