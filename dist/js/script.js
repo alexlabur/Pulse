@@ -14,13 +14,15 @@ $(document).ready(function(){
                     arrows: true,
                     dots: false
                 },
-
+			},
+			{	
 				breakpoint: 768,
                 settings: {
                     arrows: false,
                     dots: true
 				},
-				
+			},
+			{
 				breakpoint: 576,
                 settings: {
                     arrows: false,
