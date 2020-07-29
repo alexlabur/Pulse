@@ -13,7 +13,7 @@ $(document).ready(function(){
                 settings: {
                     arrows: false,
                     dots: true
-				},
+				}
             },
             {
 				breakpoint: 576,
