@@ -6,6 +6,12 @@
         
     }
 
+    .carousel {
+        .slick-dots {
+            display: none;
+        }
+    }
+
     .header {
         font-size: 30px;
         line-height: 30px;
@@ -35,8 +41,11 @@
         }
     }
     
-};
+};  
+    
 
+    
+    
 
 
     @media (max-width: 992px) {
@@ -71,15 +80,25 @@
                 text-align: center;
             }
         }
-        .carousel {
-            .tns-item {
-                img {
-                    height: 200px;
-                }
-            }
+        
+                
+                    
+            // .tns-item {
+            //     img {
+            //         height: 200px;
+            //     }
+            // }
         }
         
-    }
+        .carousel {
+            .slick-slide img {
+                height: 300px;
+            }
+            .slick-dots {
+                display: none;
+            }
+        }
+    
         .pageup img {
             width: 60%;
         }
@@ -98,15 +117,32 @@
         }
 
         .carousel {
-            .container {
-                width: 400px;
+            .slick-dots {
+                display: none;
             }
+
+
+
+            .container {
+                width: 700px;
+            }
+
             .prev, .next {
+                display: none;
                 img {
                     width: 15px;
                     height: 15px;
                 }
             }
+
+            .slick-slide img {
+                height: 200px;
+            }
+
+           
+            
+        
+            
         }
 
         .consultation {
@@ -253,10 +289,23 @@
                 // img {
                 //     width: 33%;
                 // }
+                
             }
             .prev, .next {
                 display: none;
             }
+
+            .slick-slide img {
+                height: 150px;
+            }
+
+            
+
+            // .slick-active {
+            //     display: none;
+            // }
+            
+
         }
         .review {
             &__text {
