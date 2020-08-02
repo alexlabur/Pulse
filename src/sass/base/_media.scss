@@ -1,7 +1,7 @@
 
 @media (max-width: 1200px) {
     .container {
-        max-width: 900px;
+        max-width: 1140px;
         // width: 100%;
         
     }
@@ -95,6 +95,15 @@
                 height: 300px;
             }
             .slick-dots {
+                display: none;
+            }
+            .slick-prev {
+                display: none;
+            }
+            .slick-next {
+                display: none;
+            }
+            .button {
                 display: none;
             }
         }
