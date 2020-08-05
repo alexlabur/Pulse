@@ -1,8 +1,8 @@
 
 @media (max-width: 1200px) {
     .container {
-        max-width: 1140px;
-        // width: 100%;
+        // max-width: 1140px;
+        width: 100%;
         
     }
 
@@ -50,10 +50,10 @@
 
     @media (max-width: 992px) {
         .container {
-            max-width: 600px;
-            // width: 100%;
-            
+            max-width: 750px;
+            //width: 100%; 
         }
+
         .advantages {
             width: 100%;
             &__item {
@@ -80,16 +80,12 @@
                 text-align: center;
             }
         }
-        
-                
-                    
-            // .tns-item {
+            //.tns-item {
             //     img {
             //         height: 200px;
             //     }
             // }
         }
-        
         .carousel {
             .slick-slide img {
                 height: 300px;
@@ -121,8 +117,8 @@
 
     @media (max-width: 767px) {
         .container {
-            max-width: 700px;
-            // width: 100%;
+            //max-width: 720px;
+            //width: 100%;
         }
 
         .carousel {
@@ -130,10 +126,8 @@
                 display: none;
             }
 
-
-
             .container {
-                width: 700px;
+                // width: 590px;
             }
 
             .prev, .next {
@@ -147,22 +141,17 @@
             .slick-slide img {
                 height: 200px;
             }
-
-           
-            
-        
-            
         }
 
         .consultation {
             &__inner {
-                width: 400px;
+                // width: 400px;
             }
                 padding-top: 50px;
                 min-height: 300px;
 
             .feed-form {
-                width: 575px;
+                // width: 520px;
                 align-items: center;
                 justify-content: center;
             }
@@ -188,7 +177,7 @@
 
         .container {
             // width: 100%;
-            flex-direction: column;
+            // flex-direction: column;
             
         }
         // &__wrapper {
@@ -237,8 +226,8 @@
 
     @media (max-width: 575px) {
         .container {
-            max-width: 410px;
-            width: 100%;     
+            // max-width: 400px;
+            // width: 100%;     
         }
         .promo {
             &__icons {
@@ -289,11 +278,11 @@
 
         .carousel {
             .container {
-                width: 300px;
+                // width: 300px;
             }
             &__inner {
                 // position: relative;
-                width: 400px;
+                width: 290px;
                 // margin: 0 auto;
                 // img {
                 //     width: 33%;
@@ -324,8 +313,8 @@
         }
         .consultation {
             .feed-form {
-                width: 370px;
-                // justify-content: center;
+                //width: 370px;
+                //justify-content: center;
                 align-items: center;
             
             input {
@@ -334,7 +323,7 @@
             };
             
             .container {
-                width: 100%;
+                // width: 100%;
             }
         }
 
